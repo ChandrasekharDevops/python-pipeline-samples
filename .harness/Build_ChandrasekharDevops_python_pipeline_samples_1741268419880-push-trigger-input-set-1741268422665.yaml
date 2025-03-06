@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_ChandrasekharDevops_python_pipeline_samples_1741268419880-push-trigger-input-set
+  identifier: Build_ChandrasekharDevops_python_pipeline_samples_1741268419880pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Pythondemo
+  pipeline:
+    identifier: Build_ChandrasekharDevops_python_pipeline_samples_1741268419880
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
