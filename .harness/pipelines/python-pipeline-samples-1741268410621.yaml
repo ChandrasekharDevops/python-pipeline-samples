@@ -6,9 +6,9 @@ pipeline:
   properties:
     ci:
       codebase:
+        connectorRef: harnesspipeline
         build: <+input>
-        connectorRef: account.Github_OAuth_1741268303285
-        repoName: ChandrasekharDevops/python-pipeline-samples
+        sparseCheckout: []
   stages:
     - stage:
         identifier: build
@@ -51,9 +51,9 @@ pipeline:
                   timeout: ""
                   type: BuildAndPushDockerRegistry
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Docker
+            spec: {}
         type: CI
